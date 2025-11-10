@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Brain_Hub",
+  "version": "1.0.0",
+  "description": "Save your favorite posts and links instantly from any site.",
+  "icons": {
+    "16": "image/chromeicon.png",
+    "48": "image/chromeicon.png",
+    "128": "image/chromeicon.png"
+  },
+  "action": {
+    "default_popup": "dist/index.html",
+    "default_icon": {
+      "16": "image/chromeicon.png",
+      "48": "image/chromeicon.png",
+      "128": "image/chromeicon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "windows"
+  ],
+  "host_permissions": [
+    "http://localhost:3009/*",
+    "https://localhost:3009/*"
+  ]
+}
