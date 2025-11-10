@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+#  How to Install This Chrome Extension (Manual Method)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Step 1: Download the Extension
+Click below to download the latest version:
 
-Currently, two official plugins are available:
+👉 [Download Extension ZIP](https://github.com/samnatasuvamoy99/CortexMark/edit/main/Chrome_Extension_CortexMark)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*(If you’re hosting it on GitHub, use the “Download ZIP” link or GitHub Releases.)*
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Step 2: Extract the ZIP
+Unzip the downloaded file — you should now have a folder like:
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Step 3: Load the Extension in Chrome
+1. Open **Google Chrome**
+2. Go to: `chrome://extensions/`
+3. Enable **Developer Mode** (top-right corner)
+4. Click **“Load unpacked”**
+5. Select the extracted extension folder (`my-extension`)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+ Done! Your extension is now installed and ready to use.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Step 4 (Optional): Configuration
+If your extension includes a `config.js` file:
+1. Open `config.js` in a text editor  
+2. Update your API keys, URLs, or settings as needed  
+3. Save the file and reload the extension from `chrome://extensions`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🧠 Tip
+If you update your extension later:
+- Just delete the old one from `chrome://extensions`
+- Load the new version again following the same steps.
+
+  @suvamoy
