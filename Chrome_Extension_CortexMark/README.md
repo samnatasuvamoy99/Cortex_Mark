@@ -1,42 +1,70 @@
-#  How to Install This Chrome Extension (Manual Method)
+🌟 How to Install the Cortex Chrome Extension (Manual Method)
+🧩 Step 1: Download the Extension
 
-### Step 1: Download the Extension
-Click below to download the latest version:
+Click below to download the latest version of the Cortex Chrome Extension:
 
-👉 [Download Extension ZIP](https://github.com/samnatasuvamoy99/CortexMark/edit/main/Chrome_Extension_CortexMark)
+👉 Download Extension ZIP
 
-*(If you’re hosting it on GitHub, use the “Download ZIP” link or GitHub Releases.)*
+This link will directly start the download (no Google virus scan page).
 
----
+📂 Step 2: Extract the ZIP
 
-### Step 2: Extract the ZIP
-Unzip the downloaded file — you should now have a folder like:
+After the download completes, find the file (usually in your Downloads folder).
+
+Right-click it and select Extract All...
+
+Choose a location to extract (for example, Desktop).
+
+You’ll now have a new folder — for example:
+
+Cortex_Chrome_Extension/
+
+⚙️ Step 3: Load the Extension in Chrome
+
+Open Google Chrome.
+
+In the address bar, type:
+
+chrome://extensions/
 
 
----
+and press Enter.
 
-### Step 3: Load the Extension in Chrome
-1. Open **Google Chrome**
-2. Go to: `chrome://extensions/`
-3. Enable **Developer Mode** (top-right corner)
-4. Click **“Load unpacked”**
-5. Select the extracted extension folder (`my-extension`)
+Turn on Developer mode — switch is at the top-right corner.
 
- Done! Your extension is now installed and ready to use.
+Click the "Load unpacked" button.
 
----
+Select the extracted folder (Cortex_Chrome_Extension).
 
-### Step 4 (Optional): Configuration
-If your extension includes a `config.js` file:
-1. Open `config.js` in a text editor  
-2. Update your API keys, URLs, or settings as needed  
-3. Save the file and reload the extension from `chrome://extensions`
+Done! 🎉 The extension is now added to Chrome.
 
----
+You’ll see the Cortex icon appear near the address bar — click it anytime to open your extension.
 
-### 🧠 Tip
-If you update your extension later:
-- Just delete the old one from `chrome://extensions`
-- Load the new version again following the same steps.
+🧠 Step 4 (Optional): Configure Settings
+
+If your extension includes a config.js file:
+
+Open the file in Notepad or any text editor.
+
+Update your API keys, URLs, or any custom settings.
+
+Save your changes.
+
+Go back to chrome://extensions and click Reload on the Cortex extension card.
+
+🔁 Updating the Extension Later
+
+If a new version is available:
+
+Go to chrome://extensions.
+
+Click Remove on the old Cortex extension.
+
+Download the new ZIP using the same link above.
+
+Repeat the steps to load the new version.
+
+✅ That’s it! You’ve successfully installed Cortex manually.
+Now you can start using all its features directly from Chrome. 🚀
 
   @suvamoy
