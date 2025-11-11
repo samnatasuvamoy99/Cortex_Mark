@@ -1,6 +1,6 @@
 [submodule "Backend"]
 	path = Backend
-	url = https://github.com/yourusername/Backend.git
+	url = git@github.com:samnatasuvamoy99/Backend_cortexmark.git
 [submodule "Frontend"]
 	path = Frontend
-	url = https://github.com/yourusername/Frontend.git
+	url = git@github.com:samnatasuvamoy99/Frontend_cortexmark.git
