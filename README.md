@@ -7,7 +7,7 @@
 - **Disorganization**: No centralized place to store and organize digital content
 
 
-#### After creating this platform, I realized that users often have to open it repeatedly just to save their favorite content. Is there any solution I can make as this? The answer is CortexMark – a Chrome extension that lets users bookmark content from any platform effortlessly, so they never have to open those platforms again. This makes the experience seamless, effortless, and truly user-friendly......
+#### After creating this platform, I realized that users often have to open it repeatedly just to save their favorite content. Is there any solution I can make as this? so they never have to open those platforms again and again . This makes the experience seamless, effortless, and truly user-friendly......
 
 ### **The Solution ?? **
 **CortexMark**  Chrome extension that lets you bookmark content from ANY platform without ever opening those platfrom again an again!
