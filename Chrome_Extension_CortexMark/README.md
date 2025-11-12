@@ -3,7 +3,7 @@
 
 Click below to download the latest version of the Cortex Chrome Extension:
 
-👉 [**Download Extension ZIP**](https://drive.google.com/uc?export=download&id=1kWnfGz8xd0dvqPZd-F6VbaUx8Fk1OWSs)
+👉 [**Download Extension ZIP**](https://drive.google.com/file/d/1Ak_12-JNL4aMvh7vl0sDUCGQNwOwbUxL/view?usp=sharing)
 
 This link will directly start the download (no Google virus scan page).
 
