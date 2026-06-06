@@ -1,4 +1,4 @@
-// 
+
 import { useState, useRef } from "react";
 import { CrossIcon } from "../Icon/Delete";
 import { Button } from "./Button";
@@ -13,6 +13,7 @@ const ContentType = {
   Twitter: "twitter",
   Documents: "documents",
   Others: "others",
+  Account:"account"
 } as const;
 
 type ContentType = typeof ContentType[keyof typeof ContentType];
@@ -40,7 +41,7 @@ export function CreateContent({ onClose }: CreateContentProps) {
     try {
       setLoading(true);
 
-      // Get token from extension storage
+   
       const token: string | null = await new Promise((resolve) => {
         if (typeof chrome !== "undefined" && chrome.storage?.local) {
           chrome.storage.local.get(["token"], (result) => {
@@ -64,7 +65,7 @@ export function CreateContent({ onClose }: CreateContentProps) {
       );
 
       alert("Content added successfully!");
-      onClose(); // automatically closes card after submit
+      onClose(); 
     } catch (err: any) {
       console.error("content add error:", err);
       alert(err.response?.data?.message || "Failed to add content. Try again.");
@@ -74,32 +75,34 @@ export function CreateContent({ onClose }: CreateContentProps) {
   };
 
   return (
-    <div className="w-full bg-white border shadow-lg rounded-xl p-4 mt-2 relative">
+    <div className="w-full relative">
       {/* Close button */}
       <div
-        className="absolute top-3 right-3 cursor-pointer"
+        className="absolute top-0.5 right-0 cursor-pointer text-slate-400 hover:text-slate-600 transition-colors"
         onClick={onClose}
       >
         <CrossIcon />
       </div>
 
       {/* Header */}
-      <div className="flex gap-2 text-xl text-purple-500 justify-center mb-4">
+      <div className="flex gap-2 text-lg text-purple-600 justify-center items-center mb-4 font-bold">
         <Logo />
-        <b>CortexMark</b>
+        <span className="text-slate-800 font-bold tracking-tight">CortexMark</span>
       </div>
 
-      {/* Inputs */}
-      <Input reference={TitleRef} placeholder="Title" type="text" />
-      <Input reference={LinkRef} placeholder="Link" type="text" />
+      <div className="flex flex-col w-full">
+        <Input reference={TitleRef} placeholder="Title" type="text" />
+        <Input reference={LinkRef} placeholder="Link" type="text" />
+      </div>
 
-      {/* Type selection */}
-      <b className="block text-purple-600 mt-3 mb-2">Select your type:</b>
-      <div className="flex flex-wrap gap-2">
+      <label className="block text-[10px] font-semibold text-slate-500 uppercase tracking-wider mb-2">
+        Select Type:
+      </label>
+      <div className="flex flex-wrap gap-1.5 mb-4 justify-start">
         {Object.values(ContentType).map((ct) => (
           <Button
             key={ct}
-            text={ct}
+            text={ct.charAt(0).toUpperCase() + ct.slice(1)}
             variant={type === ct ? "primary" : "secondary"}
             styleType={type === ct ? "primarystyle" : "secondarystyle"}
             onClick={() => setType(ct)}
@@ -107,8 +110,7 @@ export function CreateContent({ onClose }: CreateContentProps) {
         ))}
       </div>
 
-      {/* Submit */}
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-2 w-full">
         <Button
           onClick={addContent}
           variant="primary"
